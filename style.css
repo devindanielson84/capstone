@@ -1,0 +1,26 @@
+.item1 { grid-area: header; }
+.item2 { grid-area: sidebar; }
+.item3 { grid-area: content; }
+.item5 { grid-area: footer; }
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header header header header'
+    'sidebar sidebar sidebar content content content'
+    'sidebar sidebar sidebar footer footer footer';
+  grid-gap: 50px;
+  background-image: url();
+  padding: 10px;
+}
+
+.grid-container > div {
+  background-color: bisque;
+  color: rgb(82, 37, 0);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+.text{
+  font-size: 25px;
+}
